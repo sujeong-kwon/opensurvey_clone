@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>오픈서베이 클론코딩</title>
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+  </head>
+  <body>
+    <!-- 헤더 영역 -->
+    <header id="header">
+      <a href="https://www.opensurvey.co.kr/"><img class="logo" src="./img/opensurvey_logo.svg" alt="opensurvey"></a>
+      <div class="desktop-container">
+          <ul id="gnb">
+            <li>
+              <span>
+                <span class="menu-name">서비스</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span class="menu-name">프로덕트</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span class="menu-name">데이터</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span class="menu-name">블로그</span>
+              </span>
+            </li>
+            <li>
+              <span>
+                <span class="menu-name out-link">고객센터</span>
+                <img src="./img/ic_sorting_up.png" width="22" height="22" alt="새창 열림 아이콘">
+              </span>
+            </li>
+          </ul>
+          <a class="contact-btn" href="#" rel="noreferrer">지금 문의하기</a>
+          <div class="login-wrap">
+            <a class="login-btn" href="#">로그인</a>
+          </div>
+      </div>
+      <div class="mobile-container">
+        <button type="button" class="hamburger-btn">
+          <img src="./img/ic_move.png" alt="햄버거이미지">
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- 메인배너 영역-->
+      <div id="mainbanner">
+        <div class="inner">
+          <div class="maintext">
+            <h1 class="maintitle">소비자 데이터로 시장의 기회를 더 빠르게 발견하세요</h1>
+            <a href="#" class="contact-common-btn">지금 문의하기</a>
+            <div class="takebtn-wrap">
+              <a href="#" class="take-common-btn">소개서 받기</a>
+            </div>
+          </div>
+          <img class="main_image" src="./img/img_main.png" width="960" height="720" alt="오픈서베이 메인 이미지">
+        </div>
+      </div>
+      <!-- 파트너스 영역-->
+      <div id="partners">
+        <ul>
+          <li><img src="./img/partners/img_skt_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_lgu_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_kakao_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_facebook_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_amorepacific_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_3M_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_zigzag_logo.png" width="150" height="60" alt="SKT"></li>
+          <li><img src="./img/partners/img_hyperconnect_logo.png" width="150" height="60" alt="SKT"></li>
+        </ul>
+      </div>
+      <!-- 컨텐츠 영역 -->
+      <div id="container">
+        <!-- 첫번째 섹션 -->
+        <section id="first">
+          <div class="inner">
+            <h2 class="service-title">복잡해진 시장과 소비자를 이해하기 위해서는 그에 맞는 새로운 방식이 필요합니다</h2>
+            <ul class="box-wrap">
+              <li>
+                <img src="./img/section_1/img_section1_1.png" alt="마케팅 리서치 이미지" width="480" height="400">
+                <div class="items">
+                  <h3>마케팅 리서치</h3>
+                  <p>
+                    <span>시장, 마케팅, 브랜딩, 제품 등 비즈니스 성장을 위한</br></span>
+                    <span>소비자 데이터를 빠르고 정확하게 얻을 수 있습니다.</span>
+                  </p>
+                  <a href="#">
+                    더 알아보기
+                    <img src="./img/ic_right_arrow.png" width="24" height="24" alt="오른쪽 화살표 아이콘">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="items left">
+                  <h3>기업 고객 자문단</h3>
+                  <p>
+                    <span>온라인과 오프라인 조사, 정량과 정성조사의</br></span>
+                    <span>경계를 허물며 숫자보다 더 생생한 VoC를 수집합니다.</span>
+                  </p>
+                  <a href="#">
+                    더 알아보기
+                    <img src="./img/ic_right_arrow.png" width="24" height="24" alt="오른쪽 화살표 아이콘">
+                  </a>
+                </div>
+                <img src="./img/section_1/img_section1_2.png" alt="마케팅 리서치 이미지" width="480" height="400">
+              </li>
+              <li>
+                <img src="./img/section_1/img_section1_3.png" alt="마케팅 리서치 이미지" width="480" height="400">
+                <div class="items">
+                  <h3>UX 리서치</h3>
+                  <p>
+                    <span>더 나은 제품과 서비스를 만들기 위해</br></span>
+                    <span>사용자의 의견을 듣고 관찰하고 분석합니다.</span>
+                  </p>
+                  <a href="#">
+                    더 알아보기
+                    <img src="./img/ic_right_arrow.png" width="24" height="24" alt="오른쪽 화살표 아이콘">
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="items left">
+                  <h3>해외 리서치</h3>
+                  <p>
+                    <span>해외에 나가지 않고도 88여 개국 글로벌 소비자와</br></span>
+                    <span>시장을 정확하게 파악할 수 있습니다.</span>
+                  </p>
+                  <a href="#">
+                    더 알아보기
+                    <img src="./img/ic_right_arrow.png" width="24" height="24" alt="오른쪽 화살표 아이콘">
+                  </a>
+                </div>
+                <img src="./img/section_1/img_section1_4.png" alt="마케팅 리서치 이미지" width="480" height="400">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 두번째 섹션 -->
+        <section id="second">
+          <div class="inner">
+            <h2>기술을 통해 풍부하고 정확한 데이터를 수집하고 더 쉽고 빠르게 분석합니다</h2>
+            <div class="thumb-img-wrap">
+              <img src="./img/section_2/img_main_survey.png" width="660" height="520" alt="서베이 플랫폼 이미지">
+              <div class="button-wrap">
+                <button class="open_button">
+                  <p class="title-p">서베이 플랫폼<img src="./img/section_2/ic_chevron_up.png" alt="열림 아이콘" width="24" height="24"></p>
+                  <article>
+                    <p>설문 편집부터 응답 수집까지 전 과정을 자동화하여 빠르고 쉽게 데이터를 수집할 수 있습니다. 정교한 타겟팅 시스템으로 원하는 프로필의 응답자에게 설문을 보낼 수 있습니다.</p>
+                    <a>
+                      더 알아보기
+                      <img src="./img/section_2/ic_forward_medium.png" width="24" height="24" alt="오른쪽 화살표 아이콘">
+                    </a>
+                  </article>
+                </button>
+                <button class="close_button">
+                  <p>
+                    데이터 수집 앱
+                    <img src="./img/section_2/ic_chevron_down.png" alt="닫힘 아이콘" width="24" height="24">
+                  </p>
+                </button>
+                <button class="close_button">
+                  <p>
+                    데이터 분석 플랫폼
+                    <img src="./img/section_2/ic_chevron_down.png" alt="닫힘 아이콘" width="24" height="24">
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 세번째 섹션 -->
+        <section id="third">
+          <div class="inner">
+            <div class="text-section">
+              <h2>먹고, 사고, 시간을 보내는 소비자에 대한 오픈서베이의 오리지널 데이터를 만나보세요</h2>
+              <a>
+                더 알아보기
+                <img src="./img/section_3/ic_forward_medium.png" width="24" height="24" alt="오른쪽 화살표 아이콘">
+              </a>
+            </div>
+            <ul>
+              <li>
+                <img src="./img/section_3/img_search.png" width="64" height="64" alt="트렌드 리포트 아이콘">
+                <p>트렌드 리포트</p>
+              </li>
+              <li>
+                <img src="./img/section_3/img_beauty.png" width="64" height="64" alt="트렌드 리포트 아이콘">
+                <p>뷰티 카테고리 리포트</p>
+              </li>
+              <li>
+                <img src="./img/section_3/img_eat.png" width="64" height="64" alt="트렌드 리포트 아이콘">
+                <p>Eat & Buy 리포트</p>
+              </li>
+              <li>
+                <img src="./img/section_3/img_card.png" width="64" height="64" alt="트렌드 리포트 아이콘">
+                <p>푸드 다이어리</p>
+              </li>
+              <li class="last-list">
+                <img src="./img/section_3/img_shopping.png" width="64" height="64" alt="트렌드 리포트 아이콘">
+                <p>카드 결제 기록</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 네번째 섹션 -->
+        <section id="fourth">
+          <div class="inner">
+            <div>
+              <p class="sub-text">누적 기업 고객 수</p>
+              <p class="main-text">2,047<!-- -->개 사</p>
+            </div>
+            <div>
+              <p class="sub-text">연간 프로젝트 수</p>
+              <p class="main-text">2,436<!-- -->개</p>
+            </div>
+            <div>
+              <p class="sub-text">활성 패널 수</p>
+              <p class="main-text">204,513<!-- -->개 사</p>
+            </div>
+          </div>
+        </section>
+        <!-- 다섯번째 섹션 -->
+        <section id="fifth">
+          <div class="inner">
+            <h2>시대를 앞서가는 기업이 오픈서베이와 함께 합니다</h2>
+            <div class="list-box">
+              <ul style="left: 0px; width: 3072px;">
+                <li>
+                  <div class="card-image">
+                    <img src="./img/section_5/img_logo_pg.png" height="48" alt="소비자시장전략본부 이미지">
+                  </div>
+                  <p class="card-team">소비자시장전략본부</p>
+                  <p class="card-author">이지우 과장님</p>
+                  <article class="card-content">
+                    <p>계속해서 변하는 시장을 파악하기 위해 빠른 소비자 데이터 수집과 분석은 필수 요소가 되었습니다. Ad-hoc조사부터 다이어리 조사와 FGD까지, 시장과 소비자에 대해 품고 있는 다양한 가설을 검증하기 위한 빠르고 정확한 전략이 바로 오픈서베이입니다.</p>
+                  </article>
+                </li>
+                <li>
+                  <div class="card-image">
+                    <img src="./img/section_5/img_logo_cj.png" height="50" alt="한국) Trend&amp;Insight 이미지">
+                  </div>
+                  <p class="card-team">한국) Trend&Insight</p>
+                  <p class="card-author">김강희 님</p>
+                  <article class="card-content">
+                    <p>오픈서베이는 항상 소비자의 시선으로 제품을 만들려는 저희의 노력을 잘 이해하는 파트너입니다.</p>
+                    <p>국내 주요 조사업체 중 가장 빠르게 소비자 의견을 수집할 수 있으며, 함께 데이터 자산을 함께 쌓아가고 있어 더욱 든든합니다.</p>
+                  </article>
+                </li>
+                <li>
+                  <div class="card-image">
+                    <img src="./img/section_5/img_logo_brothers.png" height="36" alt="CX센터 프로덕트비저닝팀 이미지">
+                  </div>
+                  <p class="card-team">CX센터 프로덕트비저닝팀</p>
+                  <article class="card-content">
+                    <p>애자일한 개발 문화를 가진 테크 조직이 데이터를 보는 방식은 달라야 합니다.</p>
+                    <p>오픈서베이의 놀라운 속도와 데이터 퀄리티, 모바일 환경에 대한 이해는 우아한형제들이 더욱 더 나은 사용자 경험을 고민하고 멋진 프로덕을 만드는데 도움을 줍니다.</p>
+                  </article>
+                </li>
+                <li>
+                  <div class="card-image">
+                    <img src="./img/section_5/img_logo_toss.png" height="34" alt="Brand platform team 이미지">
+                  </div>
+                  <p class="card-team">Brand platform team</p>
+                  <p class="card-author">이정효 브랜드매니저님</p>
+                  <article class="card-content">
+                    <p>차별화되고 시의성 있는 브랜드 경험을 설계하기 위해서는 빠르고 정확한 브랜드 진단이 필요합니다. 토스는 오픈서베이와 함께 보다 객관적인 지표를 확보하고, 정성적인 데이터를 수집을 통해 브랜드 진단을 하고 있습니다.</p>
+                  </article>
+                </li>
+                <li>
+                  <div class="card-image">
+                    <img src="./img/section_5/img_logo_toss.png" height="34" alt="Brand platform team 이미지">
+                  </div>
+                  <p class="card-team">Brand platform team</p>
+                  <p class="card-author">이정효 브랜드매니저님</p>
+                  <article class="card-content">
+                    <p>차별화되고 시의성 있는 브랜드 경험을 설계하기 위해서는 빠르고 정확한 브랜드 진단이 필요합니다. 토스는 오픈서베이와 함께 보다 객관적인 지표를 확보하고, 정성적인 데이터를 수집을 통해 브랜드 진단을 하고 있습니다.</p>
+                  </article>
+                </li>
+                <li>
+                  <div class="card-image">
+                    <img src="./img/section_5/img_logo_toss.png" height="34" alt="Brand platform team 이미지">
+                  </div>
+                  <p class="card-team">Brand platform team</p>
+                  <p class="card-author">이정효 브랜드매니저님</p>
+                  <article class="card-content">
+                    <p>차별화되고 시의성 있는 브랜드 경험을 설계하기 위해서는 빠르고 정확한 브랜드 진단이 필요합니다. 토스는 오픈서베이와 함께 보다 객관적인 지표를 확보하고, 정성적인 데이터를 수집을 통해 브랜드 진단을 하고 있습니다.</p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <div class="button-wrap">
+              <button class="left-btn">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9.5 7 5 5-5 5" stroke="#1D252D" stroke-opacity="0.87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <button class="right-btn">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9.5 7 5 5-5 5" stroke="#1D252D" stroke-opacity="0.87" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- 여섯번째 섹션 -->
+        <section id="sixth">
+          <article class="contactBannerInner">
+            <div class="contactBanner">
+              <div class="bannerTop">
+                <p class="banner-title">지금 바로 문의하세요.</p>
+                <a class="banner-btn">문의하기</a>
+              </div>
+              <p class="banner-content">비즈니스 고민만 가져오세요.</p>
+              <p class="banner-content">오픈서베이 팀이 최적의 솔루션을 제안합니다.</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- 푸터 영역 -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer-top">
+          <a href="https://www.opensurvey.co.kr">
+            <img src="./img/logo_gray.svg" class="footer-logo" height="24" alt="opensurvey logo">
+          </a>
+          <ul class="footer-menulist">
+            <li><a href="#" class="footer-menu">뉴스레터 신청</a></li>
+            <li><a href="#" class="footer-menu">블로그</a></li>
+            <li><a href="#" class="footer-menu">커리어</a></li>
+            <li><a href="#" class="footer-menu">고객센터</a></li>
+          </ul>
+          <ul class="footer-right">
+            <li><a href="#"><img class="footer-icon" width="40" height="40" src="./img/facebook_icon.png" alt="페이스북 아이콘"></a></li>
+            <li><a href="#"><img class="footer-icon" width="40" height="40" src="./img/naver_icon.png" alt="네이버 아이콘"></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            <p class="footer-copyright">© Opensurvey Inc.</p>
+            <p class="footer-address">서울특별시 서초구 서초대로78길 5 대각빌딩 10층 (주)오픈서베이</p>
+          </div>
+          <ul class="footer-menulist">
+            <li>
+              <a href="#" class="side-menu">이용약관</a>
+            </li>
+            <li>
+              <a href="#" class="side-menu"><b>개인정보처리방침</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
